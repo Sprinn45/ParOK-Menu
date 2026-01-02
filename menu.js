@@ -15,7 +15,7 @@ const menuData = {
       { name: "Вареники", desc: "Начинки на вибір · 250 г", price: "11€" },
       { name: "Курка гриль", desc: "100 г", price: "30/35€" },
       { name: "Відбивна (свинина)", desc: "", price: "20€" },
-      { name: "М’ясо по-французьки", desc: "", price: "19€" },
+      { name: "М'ясо по-французьки", desc: "", price: "19€" },
       { name: "Хліб", desc: "", price: "2.50€" }
     ],
     "Гарніри": [
@@ -34,41 +34,41 @@ const menuData = {
       { name: "Овочевий", desc: "250 г", price: "10€" },
       { name: "Грецький", desc: "Фета, маслини · 250 г", price: "11€" },
       { name: "Вітамінний", desc: "250 г", price: "10€" },
-      { name: "Олівʼє (курка)", desc: "200 г", price: "14€" },
+      { name: "Олів'є (курка)", desc: "200 г", price: "14€" },
       { name: "Цезар", desc: "250 г", price: "16€" }
     ],
-    "Алкогольні напої": {
-      "Пиво": [
-        { name: "Corona", desc: "0.3 л", price: "5€" },
-        { name: "Wezelnburger", desc: "0.5 л", price: "5€" },
-        { name: "Weizenburger alcoholfrei", desc: "0.5 л", price: "5€" },
-        { name: "Goldbraun", desc: "0.5 л", price: "5€" }
-      ],
-      "Горілка": [
-        { name: "Nemiroff", desc: "шот 3.5€ · 0.7 л", price: "45€" },
-        { name: "Stolichnaya", desc: "шот 4€ · 0.7 л", price: "50€" },
-        { name: "Finlandia", desc: "шот 4€ · 0.7 л", price: "50€" },
-        { name: "Grey Goose", desc: "шот 8.5€ · 0.7 л", price: "120€" },
-        { name: "Schnaps", desc: "шот 3.8€ · 1 л", price: "38€" }
-      ],
-      "Віскі": [
-        { name: "Jack Daniel’s", desc: "шот 5.5€ · 0.7 л", price: "75€" },
-        { name: "Chivas Regal", desc: "шот 5.5€ · 0.7 л", price: "75€" }
-      ],
-      "Просекко": [
-        { name: "La Gioiosa", desc: "бокал 0.2 л · пляшка 0.7 л", price: "8€ / 30€" },
-        { name: "Mionetto", desc: "бокал 0.2 л · пляшка 0.7 л", price: "10€ / 35€" }
-      ],
-      "Безалкогольні напої": [
-        { name: "Квас (чорний / білий)", desc: "0.5 л", price: "5€" },
-        { name: "Borjomi", desc: "0.5 л", price: "5€" },
-        { name: "Соки", desc: "томатний / яблучний / апельсиновий · 0.3 л", price: "4€" },
-        { name: "Coca-Cola / Zero", desc: "0.3 л", price: "4.50€" },
-        { name: "Fanta / Sprite", desc: "0.3 л", price: "4.50€" },
-        { name: "Чай", desc: "чорний / зелений · 0.3 л", price: "3€" },
-        { name: "Кава", desc: "еспресо / американо", price: "3€" }
-      ]
-    }
+    "Напої": [
+      {
+        type: "Алкогольні",
+        items: [
+          { name: "Corona", desc: "Пиво 0.3 л", price: "5€" },
+          { name: "Wezelnburger", desc: "Пиво 0.5 л", price: "5€" },
+          { name: "Weizenburger alcoholfrei", desc: "Пиво 0.5 л", price: "5€" },
+          { name: "Goldbraun", desc: "Пиво 0.5 л", price: "5€" },
+          { name: "Nemiroff", desc: "Горілка шот 3.5€ · 0.7 л", price: "45€" },
+          { name: "Stolichnaya", desc: "Горілка шот 4€ · 0.7 л", price: "50€" },
+          { name: "Finlandia", desc: "Горілка шот 4€ · 0.7 л", price: "50€" },
+          { name: "Grey Goose", desc: "Горілка шот 8.5€ · 0.7 л", price: "120€" },
+          { name: "Schnaps", desc: "Горілка шот 3.8€ · 1 л", price: "38€" },
+          { name: "Jack Daniel’s", desc: "Віскі шот 5.5€ · 0.7 л", price: "75€" },
+          { name: "Chivas Regal", desc: "Віскі шот 5.5€ · 0.7 л", price: "75€" },
+          { name: "La Gioiosa", desc: "Просекко бокал 0.2 л · пляшка 0.7 л", price: "8€ / 30€" },
+          { name: "Mionetto", desc: "Просекко бокал 0.2 л · пляшка 0.7 л", price: "10€ / 35€" }
+        ]
+      },
+      {
+        type: "Безалкогольні",
+        items: [
+          { name: "Квас (чорний / білий)", desc: "0.5 л", price: "5€" },
+          { name: "Borjomi", desc: "0.5 л", price: "5€" },
+          { name: "Соки (томатний / яблучний / апельсиновий)", desc: "0.3 л", price: "4€" },
+          { name: "Coca-Cola / Zero", desc: "0.3 л", price: "4.50€" },
+          { name: "Fanta / Sprite", desc: "0.3 л", price: "4.50€" },
+          { name: "Чай (чорний / зелений)", desc: "0.3 л", price: "3€" },
+          { name: "Кава (еспресо / американо)", desc: "", price: "3€" }
+        ]
+      }
+    ]
   },
 
   en: {
@@ -107,38 +107,38 @@ const menuData = {
       { name: "Olivier salad (chicken)", desc: "200 g", price: "14€" },
       { name: "Caesar salad", desc: "250 g", price: "16€" }
     ],
-    "Alcohol": {
-      "Beer": [
-        { name: "Corona", desc: "0.3 l", price: "5€" },
-        { name: "Wezelnburger", desc: "0.5 l", price: "5€" },
-        { name: "Weizenburger alcohol-free", desc: "0.5 l", price: "5€" },
-        { name: "Goldbraun", desc: "0.5 l", price: "5€" }
-      ],
-      "Vodka": [
-        { name: "Nemiroff", desc: "shot 3.5€ · bottle 0.7 l", price: "45€" },
-        { name: "Stolichnaya", desc: "shot 4€ · bottle 0.7 l", price: "50€" },
-        { name: "Finlandia", desc: "shot 4€ · bottle 0.7 l", price: "50€" },
-        { name: "Grey Goose", desc: "shot 8.5€ · bottle 0.7 l", price: "120€" },
-        { name: "Schnaps", desc: "shot 3.8€ · 1 l", price: "38€" }
-      ],
-      "Whisky": [
-        { name: "Jack Daniel’s", desc: "shot 5.5€ · bottle 0.7 l", price: "75€" },
-        { name: "Chivas Regal", desc: "shot 5.5€ · bottle 0.7 l", price: "75€" }
-      ],
-      "Prosecco": [
-        { name: "La Gioiosa", desc: "glass 0.2 l · bottle 0.7 l", price: "8€ / 30€" },
-        { name: "Mionetto", desc: "glass 0.2 l · bottle 0.7 l", price: "10€ / 35€" }
-      ],
-      "Non-alcoholic drinks": [
-        { name: "Kvass (dark / light)", desc: "0.5 l", price: "5€" },
-        { name: "Borjomi", desc: "0.5 l", price: "4.50€" },
-        { name: "Juices", desc: "tomato / apple / orange · 0.3 l", price: "4€" },
-        { name: "Coca-Cola / Zero", desc: "0.3 l", price: "4.50€" },
-        { name: "Fanta / Sprite", desc: "0.3 l", price: "4.50€" },
-        { name: "Tea", desc: "black / green · 0.3 l", price: "3€" },
-        { name: "Coffee", desc: "espresso / americano", price: "3€" }
-      ]
-    }
+    "Drinks": [
+      {
+        type: "Alcohol",
+        items: [
+          { name: "Corona", desc: "Beer 0.3 l", price: "5€" },
+          { name: "Wezelnburger", desc: "Beer 0.5 l", price: "5€" },
+          { name: "Weizenburger alcohol-free", desc: "Beer 0.5 l", price: "5€" },
+          { name: "Goldbraun", desc: "Beer 0.5 l", price: "5€" },
+          { name: "Nemiroff", desc: "Vodka shot 3.5€ · bottle 0.7 l", price: "45€" },
+          { name: "Stolichnaya", desc: "Vodka shot 4€ · bottle 0.7 l", price: "50€" },
+          { name: "Finlandia", desc: "Vodka shot 4€ · bottle 0.7 l", price: "50€" },
+          { name: "Grey Goose", desc: "Vodka shot 8.5€ · bottle 0.7 l", price: "120€" },
+          { name: "Schnaps", desc: "Vodka shot 3.8€ · 1 l", price: "38€" },
+          { name: "Jack Daniel’s", desc: "Whisky shot 5.5€ · bottle 0.7 l", price: "75€" },
+          { name: "Chivas Regal", desc: "Whisky shot 5.5€ · bottle 0.7 l", price: "75€" },
+          { name: "La Gioiosa", desc: "Prosecco glass 0.2 l · bottle 0.7 l", price: "8€ / 30€" },
+          { name: "Mionetto", desc: "Prosecco glass 0.2 l · bottle 0.7 l", price: "10€ / 35€" }
+        ]
+      },
+      {
+        type: "Non-alcoholic",
+        items: [
+          { name: "Kvass (dark / light)", desc: "0.5 l", price: "5€" },
+          { name: "Borjomi", desc: "0.5 l", price: "4.50€" },
+          { name: "Juices (tomato / apple / orange)", desc: "0.3 l", price: "4€" },
+          { name: "Coca-Cola / Zero", desc: "0.3 l", price: "4.50€" },
+          { name: "Fanta / Sprite", desc: "0.3 l", price: "4.50€" },
+          { name: "Tea (black / green)", desc: "0.3 l", price: "3€" },
+          { name: "Coffee (espresso / americano)", desc: "", price: "3€" }
+        ]
+      }
+    ]
   },
 
   de: {
@@ -177,37 +177,37 @@ const menuData = {
       { name: "Olivier-Salat (Huhn)", desc: "200 g", price: "14€" },
       { name: "Caesar Salat", desc: "250 g", price: "16€" }
     ],
-    "Alkoholische Getränke": {
-      "Bier": [
-        { name: "Corona", desc: "0.3 l", price: "5€" },
-        { name: "Wezelnburger", desc: "0.5 l", price: "5€" },
-        { name: "Weizenburger alkoholfrei", desc: "0.5 l", price: "5€" },
-        { name: "Goldbraun", desc: "0.5 l", price: "5€" }
-      ],
-      "Wodka": [
-        { name: "Nemiroff", desc: "Shot 3.5€ · Flasche 0.7 l", price: "45€" },
-        { name: "Stolichnaya", desc: "Shot 4€ · Flasche 0.7 l", price: "50€" },
-        { name: "Finlandia", desc: "Shot 4€ · Flasche 0.7 l", price: "50€" },
-        { name: "Grey Goose", desc: "Shot 8.5€ · Flasche 0.7 l", price: "120€" },
-        { name: "Schnaps", desc: "Shot 3.8€ · 1 l", price: "38€" }
-      ],
-      "Whisky": [
-        { name: "Jack Daniel’s", desc: "Shot 5.5€ · Flasche 0.7 l", price: "75€" },
-        { name: "Chivas Regal", desc: "Shot 5.5€ · Flasche 0.7 l", price: "75€" }
-      ],
-      "Prosecco": [
-        { name: "La Gioiosa", desc: "Glas 0.2 l · Flasche 0.7 l", price: "8€ / 30€" },
-        { name: "Mionetto", desc: "Glas 0.2 l · Flasche 0.7 l", price: "10€ / 35€" }
-      ],
-      "Alkoholfreie Getränke": [
-        { name: "Kwas (dunkel / hell)", desc: "0.5 l", price: "5€" },
-        { name: "Borjomi", desc: "0.5 l", price: "5€" },
-        { name: "Säfte", desc: "Tomate / Apfel / Orange · 0.3 l", price: "4€" },
-        { name: "Coca-Cola / Zero", desc: "0.3 l", price: "4.50€" },
-        { name: "Fanta / Sprite", desc: "0.3 l", price: "4.50€" },
-        { name: "Tee", desc: "schwarz / grün · 0.3 l", price: "3€" },
-        { name: "Kaffee", desc: "Espresso / Americano", price: "3€" }
-      ]
-    }
+    "Getränke": [
+      {
+        type: "Alkoholische",
+        items: [
+          { name: "Corona", desc: "Bier 0.3 l", price: "5€" },
+          { name: "Wezelnburger", desc: "Bier 0.5 l", price: "5€" },
+          { name: "Weizenburger alkoholfrei", desc: "Bier 0.5 l", price: "5€" },
+          { name: "Goldbraun", desc: "Bier 0.5 l", price: "5€" },
+          { name: "Nemiroff", desc: "Wodka Shot 3.5€ · Flasche 0.7 l", price: "45€" },
+          { name: "Stolichnaya", desc: "Wodka Shot 4€ · Flasche 0.7 l", price: "50€" },
+          { name: "Finlandia", desc: "Wodka Shot 4€ · Flasche 0.7 l", price: "50€" },
+          { name: "Grey Goose", desc: "Wodka Shot 8.5€ · Flasche 0.7 l", price: "120€" },
+          { name: "Schnaps", desc: "Wodka Shot 3.8€ · 1 l", price: "38€" },
+          { name: "Jack Daniel’s", desc: "Whisky Shot 5.5€ · Flasche 0.7 l", price: "75€" },
+          { name: "Chivas Regal", desc: "Whisky Shot 5.5€ · Flasche 0.7 l", price: "75€" },
+          { name: "La Gioiosa", desc: "Prosecco Glas 0.2 l · Flasche 0.7 l", price: "8€ / 30€" },
+          { name: "Mionetto", desc: "Prosecco Glas 0.2 l · Flasche 0.7 l", price: "10€ / 35€" }
+        ]
+      },
+      {
+        type: "Alkoholfreie",
+        items: [
+          { name: "Kvass (dunkel / hell)", desc: "0.5 l", price: "5€" },
+          { name: "Borjomi", desc: "0.5 l", price: "4.50€" },
+          { name: "Säfte (Tomate / Apfel / Orange)", desc: "0.3 l", price: "4€" },
+          { name: "Coca-Cola / Zero", desc: "0.3 l", price: "4.50€" },
+          { name: "Fanta / Sprite", desc: "0.3 l", price: "4.50€" },
+          { name: "Tee (schwarz / grün)", desc: "0.3 l", price: "3€" },
+          { name: "Kaffee (Espresso / Americano)", desc: "", price: "3€" }
+        ]
+      }
+    ]
   }
 };
