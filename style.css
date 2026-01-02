@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #2f4f4f;
+  color: #f5f1ec;
+}
+
+header {
+  background: #d6b36a;
+  color: #2f4f4f;
+  text-align: center;
+  padding: 25px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  font-size: 36px;
+}
+
+.lang button {
+  margin: 10px 5px;
+  padding: 6px 12px;
+  border: none;
+  background: #2f4f4f;
+  color: #fff;
+  border-radius: 6px;
+}
+
+main {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+.category {
+  margin-top: 30px;
+}
+
+.category h2 {
+  color: #d6b36a;
+  border-bottom: 1px solid #d6b36a;
+}
+
+.card {
+  background: #3b5f5f;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.price {
+  color: #d6b36a;
+  font-weight: bold;
+  float: right;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.7;
+}
