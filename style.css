@@ -70,3 +70,28 @@ footer {
   padding: 20px;
   opacity: 0.7;
 }
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.lang-switch button {
+  background: transparent;
+  border: 1px solid #2f5d50;
+  color: #2f5d50;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.lang-switch button:hover {
+  background: #2f5d50;
+  color: white;
+}
