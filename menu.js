@@ -1,4 +1,6 @@
-let lang = "ua";
+let lang = "ua"; // початкова мова
+
+const menuData = {  let lang = "ua";
 
 const menuData = {
   ua: {
@@ -211,3 +213,57 @@ const menuData = {
     ]
   }
 };
+ // вставляєш сюди весь об’єкт з ua, en, de
+
+const menuContainer = document.getElementById("menu");
+const langButtons = document.querySelectorAll(".lang-btn");
+
+langButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    lang = btn.dataset.lang;
+    renderMenu();
+  });
+});
+
+function renderMenu() {
+  menuContainer.innerHTML = "";
+  const data = menuData[lang];
+
+  for (const category in data) {
+    const catTitle = document.createElement("h2");
+    catTitle.textContent = category;
+    menuContainer.appendChild(catTitle);
+
+    const catItems = data[category];
+
+    if (category === "Напої" || category === "Drinks" || category === "Getränke") {
+      catItems.forEach(subCat => {
+        const subTitle = document.createElement("h3");
+        subTitle.textContent = subCat.type;
+        menuContainer.appendChild(subTitle);
+
+        subCat.items.forEach(item => {
+          const itemDiv = document.createElement("div");
+          itemDiv.classList.add("menu-item");
+          itemDiv.innerHTML = `
+            <strong>${item.name}</strong> - ${item.price}<br>
+            <small>${item.desc}</small>
+          `;
+          menuContainer.appendChild(itemDiv);
+        });
+      });
+    } else {
+      catItems.forEach(item => {
+        const itemDiv = document.createElement("div");
+        itemDiv.classList.add("menu-item");
+        itemDiv.innerHTML = `
+          <strong>${item.name}</strong> - ${item.price}<br>
+          <small>${item.desc}</small>
+        `;
+        menuContainer.appendChild(itemDiv);
+      });
+    }
+  }
+}
+
+renderMenu();
