@@ -1,8 +1,4 @@
-let lang = "ua"; // початкова мова
-
 const menuData = {  let lang = "ua";
-
-const menuData = {
   ua: {
     "Закуски": [
       { name: "Оселедець", desc: "Маринована цибуля, грінки · 250 г", price: "14€" },
@@ -252,9 +248,7 @@ function renderMenu() {
           menuContainer.appendChild(itemDiv);
         });
       });
-    } else {
       catItems.forEach(item => {
-        const itemDiv = document.createElement("div");
         itemDiv.classList.add("menu-item");
         itemDiv.innerHTML = `
           <strong>${item.name}</strong> - ${item.price}<br>
